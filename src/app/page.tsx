@@ -1,4 +1,9 @@
 import Image from 'next/image'
+import { Dancing_Script } from 'next/font/google'
+
+const dancing_Script = Dancing_Script({
+  subsets: ['latin'],
+});
 
 export default function Home() {
   return (
@@ -10,25 +15,70 @@ export default function Home() {
         <div className='flex justify-center p-2 text-xl'>
           <a href="" className='m-2'>Home</a>
           <a href="" className='m-2'>About</a>
-
         </div>
       </div>
 
-      <div className=" flex bg-[url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80')] bg-no-repeat bg-cover p-12">
+      <div className="flex bg-[url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80')] bg-no-repeat bg-cover p-12">
         <div className='mt-12 flex flex-col items-start justify-center'>
-          <div>
-            <h1 className=' mt-4 pb-6 items-start justify-start flex flex-col pointer-events-none'>
-              <span className='text-white m-3 text-6xl pointer-events-none'>
+          <div className=''>
+            <div className='mt-4 pb-6 items-start justify-start flex flex-col pointer-events-none'>
+              <span className='text-white ml-4 m-3 text-6xl pointer-events-none'>
                 My Name is </span>
               <br />
-              <span className='text-gradient text-extra-bold text-8xl pointer-events-none'> ❝Omer Farooq❞</span>
-            </h1>
+              <span className={`text-gradient h-28 text-extra-bold text-8xl pointer-events-none ${dancing_Script.className}`}>
+                ❝Omer Farooq❞
+              </span>
+            </div>
           </div>
           <div className='px-12'>
-            <p className='ml-6 text-4xl pointer-events-none text-white'>A Web Developer👨‍💻💓</p>
+            <p className='ml-6 text-4xl pointer-events-none text-white'>A Web & Mobile Developer👨‍💻💓</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div className='flex justify-between items-center bg-gradient-to-r from-blue-500 to-green-600 p-10'>
+          <div className='m-8 mt-12 col-8'>
+            <h1 className='text-7xl underline'>About Me</h1>
+            <p className='text-white m-7 ml-0'>Passionate about technology and AI and Game Development, I'm Omer Farooq, a web developer with a thirst for innovation. I
+              strive to create dynamic and captivating web and mobile applications. Join me on this exciting journey as we push
+              the boundaries of what's possible in the world of technology. Together, let's bring ideas to life and
+              shape the future!</p>
+          </div>
+          <div className='border-4 border-white m-10 ml-12 rounded-2xl col-4'>
+            <Image src="/main.jpg" className='rounded-xl' width={500} height={500} alt="Picture of the author" />
+          </div>
+
+          <div>
+
+          </div>
+        </div>
+      </div>
+      <div className='bg-gradient-to-r from-blue-500 to-green-600 flex justify-center flex-col items-center p-20'>
+        <div>
+          <p className='text-5xl underline p-8 pt-0'>Technologies</p>
+        </div>
+        <div>
+          <div className='flex justify-between items-center'>
+            <div className='col-6 flex w-1/2 p-6 px-8 justify-around items-center'>
+              <Image src="/next.svg" className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <progress value="32" max="100">
+
+              </progress>
+
+            </div>
+            <div className='col-6 w-1/2 px-8 flex justify-around items-center'>
+              <Image src="/next.svg" className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <progress value="32" max="100" className='rounded-xl'>
+
+              </progress>
+            </div>
+
+
           </div>
         </div>
       </div>
     </div>
+
   )
 }
