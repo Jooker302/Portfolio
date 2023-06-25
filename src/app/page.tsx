@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Dancing_Script } from 'next/font/google'
 import nodejsimg from '/public/img/nodejs.png'
 import htmlimg from '/public/img/html.png'
@@ -11,6 +12,10 @@ import cimg from 'public/img/c.png'
 import laravelimg from 'public/img/laravel.png'
 import phpimg from 'public/img/php.png'
 import pythonimg from 'public/img/python.png'
+import instaimg from 'public/img/insta.svg'
+import discordimg from 'public/img/discord.svg'
+import linkedinimg from 'public/img/linkedin.svg'
+import githubimg from 'public/img/github.svg'
 
 
 
@@ -233,6 +238,32 @@ export default function Home() {
         </div>
 
       </div>
+
+
+    <div className='bg-gradient-to-r from-blue-500 to-green-600'>
+      <div className='flex justify-center py-3'>
+        <a href="https://github.com/Jooker302" className='rounded-full px-2'>
+        <Image src={githubimg} className='rounded-full fill-white border-2 border-white' width={50} height={50} alt="Picture of the author"></Image>
+        </a>
+        <a href="https://www.linkedin.com/in/i-m-omeree/" className='rounded-full px-2'>
+        <Image src={linkedinimg} className='rounded-full border-2 border-white' width={50} height={50} alt="Picture of the author"></Image>
+        </a>
+        <a href="https://discord.com/users/thejooker302" className='rounded-full px-2'>
+        <Image src={discordimg} className='rounded-full border-2 border-white' width={50} height={50} alt="Picture of the author"></Image>
+        </a>
+        <a href="https://instagram.com/i.omer_ee?igshid=ZDc4ODBmNjlmNQ==" className='rounded-full px-2'>
+        <Image src={instaimg} className='rounded-full border-2 border-white' width={50} height={50} alt="Picture of the author"></Image>
+        </a>
+      </div>
+
+      <div className='flex justify-center items-center py-3'>
+        <p >© Copyright 2023 💝</p>
+      </div>
+
+    </div>
+
+
+
     </div>
 
   )
