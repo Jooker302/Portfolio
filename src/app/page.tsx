@@ -1,5 +1,18 @@
 import Image from 'next/image'
 import { Dancing_Script } from 'next/font/google'
+import nodejsimg from '/public/img/nodejs.png'
+import htmlimg from '/public/img/html.png'
+import cssimg from '/public/img/css.png'
+import javaimg from '/public/img/java.png'
+import tailwindimg from '/public/img/tailwind.png'
+import jsimg from '/public/img/js.png'
+import bootstarpimg from 'public/img/bootstrap.png'
+import cimg from 'public/img/c.png'
+import laravelimg from 'public/img/laravel.png'
+import phpimg from 'public/img/php.png'
+import pythonimg from 'public/img/python.png'
+
+
 
 const dancing_Script = Dancing_Script({
   subsets: ['latin'],
@@ -58,25 +71,147 @@ export default function Home() {
         <div>
           <p className='text-5xl underline p-8 pt-0'>Technologies</p>
         </div>
-        <div>
-          <div className='flex justify-between items-center'>
-            <div className='col-6 flex w-1/2 p-6 px-8 justify-around items-center'>
+        <div className='w-full'>
+          <div className='flex justify-between items-center '>
+            <div className='col-6 w-1/2 px-8 flex justify-around items-center'>
               <Image src="/next.svg" className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
-              <progress value="32" max="100">
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-4x00">
+                <div className="bg-gradient-to-r from-blue-500 to-green-600 h-2.5 rounded-full w-4" ></div>
+              </div>
 
-              </progress>
 
             </div>
             <div className='col-6 w-1/2 px-8 flex justify-around items-center'>
-              <Image src="/next.svg" className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
-              <progress value="32" max="100" className='rounded-xl'>
+              <Image src={nodejsimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-4x00">
+                <div className="bg-gradient-to-r from-blue-500 to-green-600 h-2.5 rounded-full w-4" ></div>
+              </div>
 
-              </progress>
+
             </div>
 
 
           </div>
         </div>
+
+
+        <div className='w-full'>
+          <div className='flex justify-between items-center '>
+            <div className='col-6 w-1/2 px-8 flex justify-around items-center'>
+              <Image src={htmlimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-4x00">
+                <div className="bg-gradient-to-r from-blue-500 to-green-600 h-2.5 rounded-full w-4" ></div>
+              </div>
+
+
+            </div>
+            <div className='col-6 w-1/2 px-8 flex justify-around items-center'>
+              <Image src={cssimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-4x00">
+                <div className="bg-gradient-to-r from-blue-500 to-green-600 h-2.5 rounded-full w-4" ></div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <div className='w-full'>
+          <div className='flex justify-between items-center '>
+            <div className='col-6 w-1/2 px-8 flex justify-around items-center'>
+              <Image src={bootstarpimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-4x00">
+                <div className="bg-gradient-to-r from-blue-500 to-green-600 h-2.5 rounded-full w-4" ></div>
+              </div>
+
+
+            </div>
+            <div className='col-6 w-1/2 px-8 flex justify-around items-center'>
+              <Image src={tailwindimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-4x00">
+                <div className="bg-gradient-to-r from-blue-500 to-green-600 h-2.5 rounded-full w-4" ></div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <div className='w-full'>
+          <div className='flex justify-between items-center '>
+            <div className='col-6 w-1/2 px-8 flex justify-around items-center'>
+              <Image src={laravelimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-4x00">
+                <div className="bg-gradient-to-r from-blue-500 to-green-600 h-2.5 rounded-full w-4" ></div>
+              </div>
+
+
+            </div>
+            <div className='col-6 w-1/2 px-8 flex justify-around items-center'>
+              <Image src={phpimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-4x00">
+                <div className="bg-gradient-to-r from-blue-500 to-green-600 h-2.5 rounded-full w-4" ></div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <div className='w-full'>
+          <div className='flex justify-between items-center '>
+            <div className='col-6 w-1/2 px-8 flex justify-around items-center'>
+              <Image src={javaimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-4x00">
+                <div className="bg-gradient-to-r from-blue-500 to-green-600 h-2.5 rounded-full w-4" ></div>
+              </div>
+
+
+            </div>
+            <div className='col-6 w-1/2 px-8 flex justify-around items-center'>
+              <Image src={cimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-4x00">
+                <div className="bg-gradient-to-r from-blue-500 to-green-600 h-2.5 rounded-full w-4" ></div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <div className='w-full'>
+          <div className='flex justify-between items-center '>
+            <div className='col-6 w-1/2 px-8 flex justify-around items-center'>
+              <Image src={jsimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-4x00">
+                <div className="bg-gradient-to-r from-blue-500 to-green-600 h-2.5 rounded-full w-4" ></div>
+              </div>
+
+
+            </div>
+            <div className='col-6 w-1/2 px-8 flex justify-around items-center'>
+              <Image src={pythonimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-4x00">
+                <div className="bg-gradient-to-r from-blue-500 to-green-600 h-2.5 rounded-full w-4" ></div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+
       </div>
     </div>
 
