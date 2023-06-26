@@ -46,10 +46,10 @@ export default function Home() {
         <div className='mt-12 flex flex-col items-start justify-center'>
           <div className=''>
             <div className='mt-4 pb-6 items-start justify-start flex flex-col pointer-events-none'>
-              <span className='text-white ml-4 m-3 text-6xl pointer-events-none'>
+              <span className='text-white md:ml-4 md:m-3 md:text-6xl text-3xl pointer-events-none'>
                 My Name is </span>
               <br />
-              <span className={`text-gradient h-28 text-extra-bold text-5xl md:text-8xl sm:text-8xl pointer-events-none ${dancing_Script.className}`}>
+              <span className={`text-gradient md:h-28 font-bold text-4xl md:text-8xl sm:text-8xl pointer-events-none ${dancing_Script.className}`}>
                 ❝Omer Farooq❞
               </span>
             </div>
