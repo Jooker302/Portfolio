@@ -49,21 +49,21 @@ export default function Home() {
               <span className='text-white ml-4 m-3 text-6xl pointer-events-none'>
                 My Name is </span>
               <br />
-              <span className={`text-gradient h-28 text-extra-bold text-8xl pointer-events-none ${dancing_Script.className}`}>
+              <span className={`text-gradient h-28 text-extra-bold text-5xl md:text-8xl sm:text-8xl pointer-events-none ${dancing_Script.className}`}>
                 ❝Omer Farooq❞
               </span>
             </div>
           </div>
-          <div className='px-12'>
-            <p className='ml-6 text-4xl pointer-events-none text-white'>A Web & Mobile Developer👨‍💻💓</p>
+          <div className='sm:px-12'>
+            <p className='sm:ml-6 md:ml-6 text-2xl md:text-4xl sm:text-4xl pointer-events-none text-white'>A Web & Mobile Developer👨‍💻💓</p>
           </div>
         </div>
       </div>
 
       <div>
-        <div className='flex justify-between items-center bg-gradient-to-r from-blue-500 to-green-600 p-10'>
+        <div className='flex flex-wrap sm:flex-nowrap md:flex-nowrap justify-between items-center bg-gradient-to-r from-blue-500 to-green-600 p-10'>
           <div className='m-8 mt-12 col-8'>
-            <h1 className='text-7xl underline'>About Me</h1>
+            <h1 className='sm:text-7xl md:text-7xl text-3xl underline'>About Me</h1>
             <p className='text-white m-7 ml-0'>Passionate about technology and AI and Game Development, I&apos;m Omer Farooq, a web developer with a thirst for innovation. I
               strive to create dynamic and captivating web and mobile applications. Join me on this exciting journey as we push
               the boundaries of what&apos;s possible in the world of technology. Together, let&apos;s bring ideas to life and
@@ -78,24 +78,24 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='bg-gradient-to-r from-blue-500 to-green-600 flex justify-center flex-col items-center p-20'>
+      <div className='bg-gradient-to-r from-blue-500 to-green-600 flex justify-center flex-col items-center md:p-20 sm:p-20'>
         <div>
           <p className='text-5xl underline p-8 pt-0'>Technologies</p>
         </div>
         <div className='w-full'>
           <div className='flex flex-col md:flex-row justify-between items-center'>
             <div className='md:w-1/2 px-8 flex justify-around items-center'>
-              <Image src={nextimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div className="bg-gradient-to-r from-gray-700 to-black h-2.5 rounded-full w-80" ></div>
+              <Image src={nextimg} className='rounded-xl my-6 md:m-6 sm:m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="md:w-full sm:w-full w-80 bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                <div className="bg-gradient-to-r from-gray-700 to-black h-2.5 rounded-full md:w-80 sm:w-80 w-64" ></div>
               </div>
 
 
             </div>
             <div className='md:w-1/2 px-8 flex justify-around items-center mt-4 md:mt-0'>
-              <Image src={nodejsimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div className="bg-gradient-to-r to-gray-700 from-green-700 h-2.5 w-80 rounded-full" ></div>
+              <Image src={nodejsimg} className='rounded-xl my-6 md:m-6 sm:m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="md:w-full sm:w-full w-80 bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                <div className="bg-gradient-to-r to-gray-700 from-green-700 h-2.5 md:w-80 sm:w-80 w-64 rounded-full" ></div>
               </div>
 
 
@@ -109,15 +109,15 @@ export default function Home() {
         <div className='w-full'>
           <div className='flex flex-col md:flex-row justify-between items-center'>
             <div className='md:w-1/2 px-8 flex justify-around items-center '>
-              <Image src={htmlimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author" />
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div className="bg-gradient-to-r to-orange-600 from-gray-300 h-2.5 rounded-full w-92 " ></div>
+              <Image src={htmlimg} className='rounded-xl my-6 md:m-6 sm:m-6' width={50} height={50} alt="Picture of the author" />
+              <div className="md:w-full sm:w-full w-80 bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                <div className="bg-gradient-to-r to-orange-600 from-gray-300 h-2.5 rounded-full md:w-92 sm:w-92 " ></div>
               </div>
             </div>
             <div className='md:w-1/2 px-8 flex justify-around items-center mt-4 md:mt-0'>
-              <Image src={cssimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author" />
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div className="bg-gradient-to-r from-gray-300 to-blue-400 h-2.5 rounded-full w-80" ></div>
+              <Image src={cssimg} className='rounded-xl my-6 md:m-6 sm:m-6' width={50} height={50} alt="Picture of the author" />
+              <div className="md:w-full sm:w-full w-80 bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                <div className="bg-gradient-to-r from-gray-300 to-blue-400 h-2.5 rounded-full md:w-80 sm:w-80 w-64" ></div>
               </div>
             </div>
           </div>
@@ -127,40 +127,17 @@ export default function Home() {
         <div className='w-full'>
           <div className='flex flex-col md:flex-row justify-between items-center '>
             <div className='md:w-1/2 px-8 flex justify-around items-center'>
-              <Image src={bootstarpimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div className="bg-gradient-to-r from-purple-400 to-purple-950 h-2.5 rounded-full w-72" ></div>
+              <Image src={bootstarpimg} className='rounded-xl my-6 md:m-6 sm:m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="md:w-full sm:w-full w-80 bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                <div className="bg-gradient-to-r from-purple-400 to-purple-950 h-2.5 rounded-full md:w-72 sm:w-72 w-56" ></div>
               </div>
 
 
             </div>
             <div className='md:w-1/2 px-8 flex justify-around items-center mt-4 md:mt-0'>
-              <Image src={tailwindimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div className="bg-gradient-to-r from-blue-300 to-blue-900 w-72 h-2.5 rounded-full" ></div>
-              </div>
-
-
-            </div>
-
-
-          </div>
-        </div>
-
-        <div className='w-full'>
-          <div className='flex flex-col md:flex-row justify-between items-center '>
-            <div className='md:w-1/2 px-8 flex justify-around items-center'>
-              <Image src={laravelimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div className="bg-gradient-to-r from-red-400 to-red-600 w-92 h-2.5 rounded-full" ></div>
-              </div>
-
-
-            </div>
-            <div className='md:w-1/2 px-8 flex justify-around items-center mt-4 md:mt-0'>
-              <Image src={phpimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div className="bg-gradient-to-r from-purple-600 to-blue-800 h-2.5 rounded-full w-92" ></div>
+              <Image src={tailwindimg} className='rounded-xl my-6 md:m-6 sm:m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="md:w-full sm:w-full w-80 bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                <div className="bg-gradient-to-r from-blue-300 to-blue-900 md:w-72 sm:w-72 w-56 h-2.5 rounded-full" ></div>
               </div>
 
 
@@ -173,17 +150,17 @@ export default function Home() {
         <div className='w-full'>
           <div className='flex flex-col md:flex-row justify-between items-center '>
             <div className='md:w-1/2 px-8 flex justify-around items-center'>
-              <Image src={javaimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div className="bg-gradient-to-r from-red-500 to-blue-700 h-2.5 rounded-full w-80" ></div>
+              <Image src={laravelimg} className='rounded-xl my-6 md:m-6 sm:m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="md:w-full sm:w-full w-80 bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                <div className="bg-gradient-to-r from-red-400 to-red-600 md:w-92 sm:w-92 h-2.5 rounded-full" ></div>
               </div>
 
 
             </div>
             <div className='md:w-1/2 px-8 flex justify-around items-center mt-4 md:mt-0'>
-              <Image src={cimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div className="bg-gradient-to-r from-zinc-100 via-blue-600 to-cyan-500 h-2.5 rounded-full w-64" ></div>
+              <Image src={phpimg} className='rounded-xl my-6 md:m-6 sm:m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="md:w-full sm:w-full w-80 bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                <div className="bg-gradient-to-r from-purple-600 to-blue-800 h-2.5 rounded-full md:w-92 sm:w-92" ></div>
               </div>
 
 
@@ -196,17 +173,40 @@ export default function Home() {
         <div className='w-full'>
           <div className='flex flex-col md:flex-row justify-between items-center '>
             <div className='md:w-1/2 px-8 flex justify-around items-center'>
-              <Image src={jsimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div className="bg-gradient-to-r  to-yellow-400 from-black h-2.5 rounded-full w-72" ></div>
+              <Image src={javaimg} className='rounded-xl my-6 md:m-6 sm:m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="md:w-full sm:w-full w-80 bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                <div className="bg-gradient-to-r from-red-500 to-blue-700 h-2.5 rounded-full md:w-80 sm:w-80 w-64" ></div>
               </div>
 
 
             </div>
             <div className='md:w-1/2 px-8 flex justify-around items-center mt-4 md:mt-0'>
-              <Image src={pythonimg} className='rounded-xl m-6' width={50} height={50} alt="Picture of the author"></Image>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
-                <div className="bg-gradient-to-r from-blue-500 to-yellow-500 h-2.5 rounded-full w-64" ></div>
+              <Image src={cimg} className='rounded-xl my-6 md:m-6 sm:m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="md:w-full sm:w-full w-80 bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                <div className="bg-gradient-to-r from-zinc-100 via-blue-600 to-cyan-500 h-2.5 rounded-full md:w-64 sm:w-64 w-52" ></div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <div className='w-full'>
+          <div className='flex flex-col md:flex-row justify-between items-center '>
+            <div className='md:w-1/2 px-8 flex justify-around items-center'>
+              <Image src={jsimg} className='rounded-xl my-6 md:m-6 sm:m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="md:w-full sm:w-full w-80 bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                <div className="bg-gradient-to-r  to-yellow-400 from-black h-2.5 rounded-full md:w-72 sm:w-72 w-64" ></div>
+              </div>
+
+
+            </div>
+            <div className='md:w-1/2 px-8 flex justify-around items-center mt-4 md:mt-0'>
+              <Image src={pythonimg} className='rounded-xl my-6 md:m-6 sm:m-6' width={50} height={50} alt="Picture of the author"></Image>
+              <div className="md:w-full sm:w-full w-80 bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                <div className="bg-gradient-to-r from-blue-500 to-yellow-500 h-2.5 rounded-full md:w-64 sm:w-64 w-52" ></div>
               </div>
 
 
@@ -304,7 +304,7 @@ export default function Home() {
 
       <div className="flex bg-[url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80')] bg-no-repeat bg-cover justify-center">
 
-        <div className='bg-white m-24 px-72 py-20 flex flex-col justify-between items-center bg-opacity-50 rounded-3xl'>
+        <div className='bg-white m-24 p-20 sm:px-72 sm:py-20 md:px-72 md:py-20 flex flex-col justify-between items-center bg-opacity-50 rounded-3xl'>
           <p className='text-black text-3xl bold mb-6 mt-0'>Contact Us</p>
           <form className='flex flex-col justify-around items-center' action="" method="">
             <label htmlFor="name" className='text-black m-2'>Name</label>
