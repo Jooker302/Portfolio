@@ -30,6 +30,8 @@ const dancing_Script = Dancing_Script({
 });
 
 export default function Home() {
+
+  
   return (
     <div>
       <div className='flex justify-between bg-gradient-to-r from-blue-500 to-green-600 items-center'>
@@ -38,7 +40,8 @@ export default function Home() {
         </div>
         <div className='flex justify-center p-2 text-xl'>
           <a href="" className='m-2'>Home</a>
-          <a href="" className='m-2'>About</a>
+          {/* <a href="#aboutme" className='m-2'>About</a> */}
+          <Link href='#aboutme' className='m-2' scroll={false}>About</Link> 
         </div>
       </div>
 
@@ -61,7 +64,7 @@ export default function Home() {
       </div>
 
       <div>
-        <div className='flex flex-wrap sm:flex-nowrap md:flex-nowrap justify-between items-center bg-gradient-to-r from-blue-500 to-green-600 p-10'>
+        <div id="aboutme" className='flex flex-wrap sm:flex-nowrap md:flex-nowrap justify-between items-center bg-gradient-to-r from-blue-500 to-green-600 p-10'>
           <div className='m-8 mt-12 col-8'>
             <h1 className='sm:text-7xl md:text-7xl text-3xl underline'>About Me</h1>
             <p className='text-white m-7 ml-0'>Passionate about technology and AI and Game Development, I&apos;m Omer Farooq, a web developer with a thirst for innovation. I
@@ -308,11 +311,11 @@ export default function Home() {
           <p className='text-black md:text-5xl text-3xl font-bold bold mb-6 mt-0'>Contact Us</p>
           <form className='flex flex-col justify-around items-center' action="" method="">
             <label htmlFor="name" className='text-black m-2'>Name</label>
-            <input className='rounded-xl border-2 text-center border-gray-400' type="text" name="name" id="name" placeholder='Name' />
+            <input className='rounded-xl border-2 text-center text-black border-gray-400' type="text" name="name" id="name" placeholder='Name' />
             <label htmlFor="email" className='text-black m-2'>Email</label>
-            <input type="email" className='rounded-xl text-center border-2 border-gray-400' name="email" id="email" placeholder='Email' />
+            <input type="email" className='rounded-xl text-center text-black border-2 border-gray-400' name="email" id="email" placeholder='Email' />
             <label htmlFor="message" className='text-black m-2'>Message</label>
-            <input type="text" className='rounded-xl h-16 text-center border-2 border-gray-400' name="message" id="message" placeholder='Message' />
+            <textarea className='rounded-xl h-16 text-center text-black border-2 border-gray-400' name="message" id="message" placeholder='Message'></textarea>
 
 
 
