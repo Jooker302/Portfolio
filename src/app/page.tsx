@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex bg-[url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80')] bg-no-repeat bg-cover p-12">
+      <div className="flex bg-fixed bg-[url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80')] bg-no-repeat bg-cover p-12">
         <div className='mt-12 flex flex-col items-start justify-center'>
           <div className=''>
             <div className='mt-4 pb-6 items-start justify-start flex flex-col pointer-events-none'>
@@ -305,7 +305,7 @@ export default function Home() {
 
 
 
-      <div className="flex bg-[url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80')] bg-no-repeat bg-cover justify-center">
+      <div className="flex bg-fixed bg-[url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80')] bg-no-repeat bg-cover justify-center">
 
         <div className='bg-white md:m-24 m-8 py-10 px-10 sm:px-72 sm:py-20 md:px-72 md:py-20 flex flex-col justify-between items-center bg-opacity-50 rounded-3xl'>
           <p className='text-black md:text-5xl text-3xl font-bold bold mb-6 mt-0'>Contact Us</p>
@@ -316,6 +316,7 @@ export default function Home() {
             <input type="email" className='rounded-xl text-center text-black border-2 border-gray-400' name="email" id="email" placeholder='Email' />
             <label htmlFor="message" className='text-black m-2'>Message</label>
             <textarea className='rounded-xl h-16 text-center text-black border-2 border-gray-400' name="message" id="message" placeholder='Message'></textarea>
+            <input className='m-2 my-4 mb-0 border-2 border-black  p-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-600 hover:font-bold' type="submit" value="Submit" />
 
 
 
