@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import { Dancing_Script } from 'next/font/google'
 import nodejsimg from '/public/img/nodejs.png'
 import htmlimg from '/public/img/html.png'
@@ -29,8 +32,50 @@ const dancing_Script = Dancing_Script({
   subsets: ['latin'],
 });
 
+
+
+
 export default function Home() {
 
+const [name, setName] = useState('')
+const [email, setEmail] = useState('')
+const [message, setMessage] = useState('')
+const [submitted, setSubmitted] = useState(false)
+
+const handleContact = (e: any) => {
+  e.preventDefault();
+  // console.log("sending");
+  
+  let data = {
+    name,
+    email,
+    message
+  }
+
+
+
+  // console.log(data)
+  fetch('/api/contact', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json, text/plain, */*',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  }).then((res) => {
+    // console.log('Response received')
+    if (res.status === 200) {
+
+      // console.log('Response succeeded!',res)
+      setSubmitted(true)
+      setName('')
+      setEmail('')
+      setMessage('')
+      
+    }
+  })
+
+}
   
   return (
     <div>
@@ -308,15 +353,15 @@ export default function Home() {
       <div className="flex bg-fixed bg-[url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80')] bg-no-repeat bg-cover justify-center">
 
         <div className='bg-white md:m-24 m-8 py-10 px-10 sm:px-72 sm:py-20 md:px-72 md:py-20 flex flex-col justify-between items-center bg-opacity-50 rounded-3xl'>
-          <p className='text-black md:text-5xl text-3xl font-bold bold mb-6 mt-0'>Contact Us</p>
+          <p className='text-black md:text-5xl text-3xl font-bold bold mb-6 mt-0'>Contact Me</p>
           <form className='flex flex-col justify-around items-center' action="" method="">
             <label htmlFor="name" className='text-black m-2'>Name</label>
-            <input className='rounded-xl border-2 text-center text-black border-gray-400' type="text" name="name" id="name" placeholder='Name' />
+            <input className='rounded-xl border-2 text-center text-black border-gray-400' type="text" onChange={(e)=>{setName(e.target.value)}} name="name" id="name" placeholder='Name' />
             <label htmlFor="email" className='text-black m-2'>Email</label>
-            <input type="email" className='rounded-xl text-center text-black border-2 border-gray-400' name="email" id="email" placeholder='Email' />
+            <input type="email" className='rounded-xl text-center text-black border-2 border-gray-400' onChange={(e)=>{setEmail(e.target.value)}} name="email" id="email" placeholder='Email' />
             <label htmlFor="message" className='text-black m-2'>Message</label>
-            <textarea className='rounded-xl h-16 text-center text-black border-2 border-gray-400' name="message" id="message" placeholder='Message'></textarea>
-            <input className='m-2 my-4 mb-0 border-2 border-black  p-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-600 hover:font-bold' type="submit" value="Submit" />
+            <textarea className='rounded-xl h-16 text-center text-black border-2 border-gray-400' name="message" onChange={(e)=>{setMessage(e.target.value)}} id="message" placeholder='Message'></textarea>
+            <input className='m-2 my-4 mb-0 border-2 border-black text-black hover:text-white  p-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-600 hover:font-bold' onClick={(e) => {handleContact(e)}} type="submit" value="Submit" />
 
 
 
