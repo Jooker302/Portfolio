@@ -356,11 +356,11 @@ const handleContact = (e: any) => {
           <p className='text-black md:text-5xl text-3xl font-bold bold mb-6 mt-0'>Contact Me</p>
           <form className='flex flex-col justify-around items-center' action="" method="">
             <label htmlFor="name" className='text-black m-2'>Name</label>
-            <input className='rounded-xl border-2 text-center text-black border-gray-400' type="text" onChange={(e)=>{setName(e.target.value)}} name="name" id="name" placeholder='Name' />
+            <input className='rounded-xl border-2 text-center text-black border-gray-400' value={name} type="text" onChange={(e)=>{setName(e.target.value)}} name="name" id="name" placeholder='Name' />
             <label htmlFor="email" className='text-black m-2'>Email</label>
-            <input type="email" className='rounded-xl text-center text-black border-2 border-gray-400' onChange={(e)=>{setEmail(e.target.value)}} name="email" id="email" placeholder='Email' />
+            <input type="email" className='rounded-xl text-center text-black border-2 border-gray-400' value={email} onChange={(e)=>{setEmail(e.target.value)}} name="email" id="email" placeholder='Email' />
             <label htmlFor="message" className='text-black m-2'>Message</label>
-            <textarea className='rounded-xl h-16 text-center text-black border-2 border-gray-400' name="message" onChange={(e)=>{setMessage(e.target.value)}} id="message" placeholder='Message'></textarea>
+            <textarea className='rounded-xl h-16 text-center text-black border-2 border-gray-400' value={message} name="message" onChange={(e)=>{setMessage(e.target.value)}} id="message" placeholder='Message'></textarea>
             <input className='m-2 my-4 mb-0 border-2 border-black text-black hover:text-white  p-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-600 hover:font-bold' onClick={(e) => {handleContact(e)}} type="submit" value="Submit" />
 
 
