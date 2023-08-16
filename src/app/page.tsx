@@ -40,9 +40,16 @@ export default function Home() {
   const handleContact = (e: any) => {
     e.preventDefault();
     if (submitted === false) {
-      setSubmitted(true);
+      
 
       // console.log("sending");
+      
+        if (!name || !email || !message) {
+          toast.error("Please fill in all fields.");
+          return;
+        }
+        
+        setSubmitted(true);
 
       let data = {
         name,
@@ -80,10 +87,12 @@ export default function Home() {
         success: "Mail Sent",
         error: "Some Error Occur",
       });
+    
     } else {
       toast.error("Wait!");
     }
   };
+
 
   return (
     <div>
