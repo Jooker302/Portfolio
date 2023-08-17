@@ -5,8 +5,12 @@ import {
   faDiscord,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-
 import { Toaster } from "react-hot-toast";
+import { Dancing_Script } from "next/font/google";
+
+const dancing_Script = Dancing_Script({
+    subsets: ["latin"],
+  });
 
 const Footer = () => {
   return (
@@ -48,8 +52,8 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="flex justify-center items-center pt-0 py-3">
-        <p>Design 💝 By Me 😁</p>
+      <div className={`flex justify-center items-center pt-0 py-3 ${dancing_Script.className}`}>
+        <p className="text-lg">Design 💝 By Me 😁</p>
       </div>
       <Toaster position="top-right" reverseOrder={false} />
     </div>
