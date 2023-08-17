@@ -61,7 +61,7 @@ export const POST = async (req,res) => {
         const mail2Data = {
           from: 'i.omer6637@gmail.com',
           to: email,
-          subject: `Thank You for Contact me`,
+          subject: `Thank You for Contacting me`,
         //   text: message,
           html: `<div> Dear ${name}, <br><br> &emsp; &emsp; &emsp;
           I hope this email finds you well. Thank you for reaching out to me. I appreciate your interest and would like to assure you that your message has been received. <br>
