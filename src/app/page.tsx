@@ -26,6 +26,8 @@ import phtg from "public/img/htg.png";
 import palte from "public/img/alte.png";
 import pqueenl from "public/img/queenl.png";
 import pbreakgame from "public/img/breakgame.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter,faTelegram,faGithub,faLinkedin,faDiscord,faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const dancing_Script = Dancing_Script({
   subsets: ["latin"],
@@ -524,7 +526,7 @@ export default function Home() {
             </label>
             <input
               required
-              className="rounded-xl border-2 text-center text-black border-gray-400"
+              className="rounded-xl md:h-8 border-2 h-8 text-black border-gray-400"
               value={name}
               type="text"
               onChange={(e) => {
@@ -540,7 +542,7 @@ export default function Home() {
             <input
               required
               type="email"
-              className="rounded-xl text-center text-black border-2 border-gray-400"
+              className="rounded-xl h-8 md:h-8 text-black border-2 border-gray-400"
               value={email}
               onChange={(e) => {
                 setEmail(e.target.value);
@@ -554,7 +556,7 @@ export default function Home() {
             </label>
             <textarea
               required
-              className="rounded-xl h-16 text-center text-black border-2 border-gray-400"
+              className="rounded-xl md:h-24 w-56 h-24 md:w-56 text-black border-2 border-gray-400"
               value={message}
               name="message"
               onChange={(e) => {
@@ -577,55 +579,18 @@ export default function Home() {
       </div>
 
       <div className="bg-gradient-to-r from-blue-500 to-green-600">
-        <div className="flex justify-center py-3 pt-12">
-          <a href="https://github.com/Jooker302" className="rounded-full px-2">
-            <Image
-              src={githubimg}
-              className="rounded-full fill-white border-2 border-white"
-              width={50}
-              height={50}
-              alt="Picture of the author"
-            ></Image>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/i-m-omeree/"
-            className="rounded-full px-2"
-          >
-            <Image
-              src={linkedinimg}
-              className="rounded-full border-2 border-white"
-              width={50}
-              height={50}
-              alt="Picture of the author"
-            ></Image>
-          </a>
-          <a
-            href="https://discord.com/users/thejooker302"
-            className="rounded-full px-2"
-          >
-            <Image
-              src={discordimg}
-              className="rounded-full border-2 border-white"
-              width={50}
-              height={50}
-              alt="Picture of the author"
-            ></Image>
-          </a>
-          <a
-            href="https://instagram.com/i.omer_ee?igshid=ZDc4ODBmNjlmNQ=="
-            className="rounded-full px-2"
-          >
-            <Image
-              src={instaimg}
-              className="rounded-full border-2 border-white"
-              width={50}
-              height={50}
-              alt="Picture of the author"
-            ></Image>
-          </a>
+        <div className="flex justify-center py-3">
+        <a className="m-2" href="https://github.com/Jooker302"><FontAwesomeIcon icon={faGithub} size="lg" style={{ color: '#ffffff', width: '40px', height: '40px' }} /></a>
+         
+          <a className="m-2" href="https://www.linkedin.com/in/i-m-omeree/"><FontAwesomeIcon icon={faLinkedin} size="lg" style={{ color: '#ffffff', width: '40px', height: '40px' }} /></a>
+          
+          <a className="m-2" href="https://discord.com/users/thejooker302"><FontAwesomeIcon icon={faDiscord} size="lg" style={{ color: '#ffffff', width: '40px', height: '40px' }} /></a>
+         
+          <a className="m-2" href="https://instagram.com/i.omer_ee?igshid=ZDc4ODBmNjlmNQ=="><FontAwesomeIcon icon={faInstagram} size="lg" style={{ color: '#ffffff', width: '40px', height: '40px' }} /></a>
+       
         </div>
 
-        <div className="flex justify-center items-center py-3">
+        <div className="flex justify-center items-center pt-0 py-3">
           <p>Design 💝 By Me 😁</p>
         </div>
       </div>
