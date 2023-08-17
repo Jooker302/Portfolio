@@ -626,7 +626,7 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center items-center py-3">
-          <p>© Copyright 2023 💝</p>
+          <p>Design 💝 By Me 😁</p>
         </div>
       </div>
       <Toaster position="top-right" reverseOrder={false} />
