@@ -50,6 +50,7 @@ export const POST = async (req,res) => {
           secure: true,
         });
     
+        let from = `Omer Farooq <i.omer6637@gmail.com>`
         const mailData = {
           from: 'i.omer6637@gmail.com',
           to: 'i.omer6637@gmail.com',
@@ -59,7 +60,7 @@ export const POST = async (req,res) => {
         };
 
         const mail2Data = {
-          from: 'i.omer6637@gmail.com',
+          from: from,
           to: email,
           subject: `Thank You for Contacting me`,
         //   text: message,
