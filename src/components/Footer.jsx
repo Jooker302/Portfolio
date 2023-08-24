@@ -14,13 +14,14 @@ const dancing_Script = Dancing_Script({
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-green-600">
+    <div id="footer" className="bg-gradient-to-r from-blue-500 to-green-600">
       <div className="flex justify-center py-3">
         <a className="m-2" href="https://github.com/Jooker302">
           <FontAwesomeIcon
             icon={faGithub}
             size="lg"
-            style={{ color: "#ffffff", width: "40px", height: "40px" }}
+            className="text-white hover:text-gray-300"
+            style={{ width: "40px", height: "40px" }}
           />
         </a>
 
@@ -28,7 +29,8 @@ const Footer = () => {
           <FontAwesomeIcon
             icon={faLinkedin}
             size="lg"
-            style={{ color: "#ffffff", width: "40px", height: "40px" }}
+            className="text-white hover:text-gray-300"
+            style={{  width: "40px", height: "40px" }}
           />
         </a>
 
@@ -36,7 +38,8 @@ const Footer = () => {
           <FontAwesomeIcon
             icon={faDiscord}
             size="lg"
-            style={{ color: "#ffffff", width: "40px", height: "40px" }}
+            className="text-white hover:text-gray-300"
+            style={{ width: "40px", height: "40px" }}
           />
         </a>
 
@@ -47,13 +50,14 @@ const Footer = () => {
           <FontAwesomeIcon
             icon={faInstagram}
             size="lg"
-            style={{ color: "#ffffff", width: "40px", height: "40px" }}
+            className="text-white hover:text-gray-300"
+            style={{  width: "40px", height: "40px" }}
           />
         </a>
       </div>
 
       <div className={`flex justify-center items-center pt-0 py-3 ${dancing_Script.className}`}>
-        <p className="text-lg">Design 💝 By Me 😁</p>
+        <p className="text-lg pointer-events-none">Design 💝 By Me 😁</p>
       </div>
       <Toaster position="top-right" reverseOrder={false} />
     </div>

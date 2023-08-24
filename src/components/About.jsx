@@ -4,8 +4,8 @@ const About = () => {
     return(
         <div>
         <div
-          id="aboutme"
-          className="flex flex-wrap sm:flex-nowrap md:flex-nowrap justify-between items-center bg-gradient-to-r from-blue-500 to-green-600 p-10"
+          id="about"
+          className="pointer-events-none flex flex-wrap sm:flex-nowrap md:flex-nowrap justify-between items-center bg-gradient-to-r from-blue-500 to-green-600 p-10"
         >
           <div className="m-8 mt-12 col-8">
             <h1 className="sm:text-7xl md:text-7xl text-3xl underline">

@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col justify-between items-center bg-gradient-to-r from-blue-500 to-green-600">
+    <div id="project" className="flex flex-col justify-between items-center bg-gradient-to-r from-blue-500 to-green-600 pointer-events-none">
       <p className="text-white text-3xl underline font-bold my-4 md:my-0 sm:text-5xl md:text-5xl">
         Projects
       </p>

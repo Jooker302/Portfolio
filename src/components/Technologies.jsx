@@ -14,7 +14,7 @@ import Image from "next/image";
 
 const Technologies = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-green-600 flex justify-center flex-col items-center md:p-20 sm:p-20">
+    <div id="stack" className="pointer-events-none bg-gradient-to-r from-blue-500 to-green-600 flex justify-center flex-col items-center md:p-20 sm:p-20">
       <div>
         <p className="md:text-5xl sm:text-5xl text-3xl font-bold underline p-8 pt-0">
           Technologies
