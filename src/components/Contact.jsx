@@ -4,6 +4,11 @@ import { useState } from "react";
 
 const Contact = () => {
 
+  const isValidEmail = (email) => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+  };
+
     const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -18,6 +23,16 @@ const Contact = () => {
       
         if (!name || !email || !message) {
           toast.error("Please fill in all fields.");
+          return;
+        }
+
+        if (!name || !message) {
+          toast.error("Please fill in all fields.");
+          return;
+        }
+    
+        if (!isValidEmail(email)) {
+          toast.error("Please enter a valid email address.");
           return;
         }
         
@@ -48,6 +63,8 @@ const Contact = () => {
             setMessage("");
             // toast.success('Mail Sent!')
             setSubmitted(false);
+          }else{
+            toast.error(res.message);
           }
         })
         .catch((error) => {
